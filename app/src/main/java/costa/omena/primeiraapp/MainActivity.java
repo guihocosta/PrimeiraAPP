@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 //                Cria uma intenção i para ter a mudança de uma tela para a outra
                 Intent i = new Intent(MainActivity.this,NextActivity.class);
 
-//                Envia no texto da caixa junto com a intent, para enviar para a outra tela
+//                Envia o texto da caixa junto com a intent, para enviar para a outra tela
                 i.putExtra("texto", textoDigitado);
 
 //                Inicia a próxima tela
