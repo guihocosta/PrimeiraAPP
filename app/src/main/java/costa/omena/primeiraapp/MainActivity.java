@@ -14,32 +14,32 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        Lê o arquivo de Layout e constrói a interface
+//        Le o arquivo de Layout e constroi a interface
         setContentView(R.layout.activity_main);
 
-//        Procurar botão através do seu id
+//        Obtem o botao enviar
         Button btnEnviar = findViewById(R.id.btnEnviar);
 
-//        Evento de click do botão -> cria um "ouvidor" de cliques
+//        Evento de click do botao - cria um "ouvidor" de cliques
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
 
-//            Função do click
+//            Metodo chamado toda vez que tem um click no mouse
             public void onClick(View v) {
 
-//                Procurar EditText através do seu id
+//                Obtem o EditText DigiteAqui
                 EditText etDigiteAqui = findViewById(R.id.etDigiteAqui);
 
-//                Pega o texto da caixa de texto
+//                Obtem o texto que foi digitado pelo usuario
                 String textoDigitado = etDigiteAqui.getText().toString();
 
-//                Cria uma intenção i para ter a mudança de uma tela para a outra
+//                Cria uma intenção para navegar para a proxima tela
                 Intent i = new Intent(MainActivity.this,NextActivity.class);
 
-//                Envia o texto da caixa junto com a intent, para enviar para a outra tela
+//                Envia o texto da caixa junto com a intent, para enviar para a proxima tela
                 i.putExtra("texto", textoDigitado);
 
-//                Inicia a próxima tela
+//                Inicia a proxima tela
                 startActivity(i);
             }
         });
