@@ -12,7 +12,7 @@ public class NextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        Renderiza o conteúdo na tela
+//        Lê o arquivo de Layout e constrói a interface
         setContentView(R.layout.activity_next);
 
 //        Pega a intenção que foi criada

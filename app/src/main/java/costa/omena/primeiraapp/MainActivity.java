@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        Os elementos são renderizados na tela
+//        Lê o arquivo de Layout e constrói a interface
         setContentView(R.layout.activity_main);
 
 //        Procurar botão através do seu id
